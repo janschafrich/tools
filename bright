@@ -1,0 +1,4 @@
+#! /bin/sh
+
+ddccontrol -r 0x10 -w "$1" dev:/dev/i2c-15;
+echo "Setting brightness of external monitor (/dev/i2c-15) to $1 %.";
