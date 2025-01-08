@@ -1,0 +1,11 @@
+[Unit]
+Description=Set Performance Mode Based on Power Source
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=~/.local/bin/set_performance_mode.sh
+
+[Install]
+WantedBy=multi-user.target
+
